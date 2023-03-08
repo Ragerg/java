@@ -8,8 +8,7 @@ public class VariableMain02 {
 		
 		//형변환 : 내가 가지고 있는 타입을 잠시동안 다른 타입으로 인식하게 만드는 것
 		num = /*(double)*/34;    // 묵시적형변환 : 생략할 수 있는 형변환(작은 것을 큰 것에)
-		
-		
+				
 		System.out.println("num : " + num);
 		
 		int num2;
@@ -25,7 +24,6 @@ public class VariableMain02 {
 	    System.out.println("num3 : " + num3);
 	    
 	    System.out.println(12 + (int)12.34);
-	    System.out.println(12 + 12.34);
 	    System.out.println(/*(double)*/12 + 12.34);
 	    
 	    
