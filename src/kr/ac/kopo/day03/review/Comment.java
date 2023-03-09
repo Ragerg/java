@@ -18,6 +18,10 @@ public class Comment {
 	static String getMessage() {
 		return "처음 작성한 자바 프로그램입니다.";
 	}
+	
+	static String getInt() {
+		return "처음 작성한 자바 프로그램입니다.";
+	}
 			
 	public static void main(String[] args) {
 		System.out.println(s + getMessage()); // 도스창출력
