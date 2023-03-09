@@ -1,4 +1,4 @@
-package kr.ac.kopo.day03;
+package kr.ac.kopo.day03.review;
 /**
  * 파일명 : Comment.java
  * 작성일 : 2023/03/09
