@@ -1,4 +1,4 @@
-package kr.ac.kopo.day03;
+package kr.ac.kopo.day04;
 
 /*
   두 개 정수 입력 : 12 5
@@ -8,7 +8,7 @@ package kr.ac.kopo.day03;
   12는 6의 배수 판단 : true
  */
 
-public class OperationMain03 {
+public class OperationMain04 {
 	
 	public static void main(String[] args) {
 	
