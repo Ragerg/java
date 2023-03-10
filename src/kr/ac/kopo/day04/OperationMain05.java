@@ -14,7 +14,6 @@ public class OperationMain05 {
 		System.out.printf("%08x\n" , num & 0xffff0000);
 		System.out.printf("%08x\n" , num | 0x0000ffff);
 
-		System.out.printf("%x\n" , num);
 
 	}
 
