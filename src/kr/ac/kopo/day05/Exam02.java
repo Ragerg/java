@@ -132,7 +132,7 @@ public class Exam02 {
 		 		System.out.println();
 		 	}
 		 
-	 	System.out.println("\n12번");
+	 	System.out.println("\n13번");
 	 		for(int i = 1; i <= 9; i++) {
 	 			if(i <=5 ) { 
 	 				for(int j = 1; j <= 5-i; j++) {
