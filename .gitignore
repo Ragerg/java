@@ -1,5 +1,6 @@
 .settings/
 bin/
+doc/
 .classpath
 .project
 master.txt
