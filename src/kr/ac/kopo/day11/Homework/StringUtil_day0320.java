@@ -1,4 +1,4 @@
-package kr.ac.kopo.day11.Homwork;
+package kr.ac.kopo.day11.Homework;
 
 import java.util.Scanner;
 
@@ -124,11 +124,23 @@ public class StringUtil_day0320 {
 		return str.charAt(length);
 	}
 	
-	
-	
-	
-	
-	
+	/**
+	 * 입력받은 문자열에서 검색할 문자열로 끝나는지 반환
+	 * @param str 문자열
+	 * @param sub 검색할 문자열
+	 * @return 
+	 */
+	boolean endsWith(String str, String sub) {
+		String strM = this.reverseString(str), strS = this.reverseString(sub);
+		for(int i = 0; i < strS.length(); i++) {
+			if (strM.charAt(i) == strS.charAt(i)) {
+				return true;
+			}
+			return false;
+		}
+		return false;
+		
+	}
 	
 	
 	
@@ -137,6 +149,29 @@ public class StringUtil_day0320 {
 }
 	
 	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	
 	
 	
