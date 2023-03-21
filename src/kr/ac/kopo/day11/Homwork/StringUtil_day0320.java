@@ -1,8 +1,8 @@
-package kr.ac.kopo.day10.Homework;
+package kr.ac.kopo.day11.Homwork;
 
 import java.util.Scanner;
 
-public class StringUtil {
+public class StringUtil_day0320 {
 	
 	Scanner sc = new Scanner(System.in);
 	
