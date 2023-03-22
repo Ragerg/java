@@ -2,7 +2,7 @@ package kr.ac.kopo.day11.Homework;
 
 import java.util.Scanner;
 
-public class StringUtil_day0320 {
+public class StringUtil_add {
 	
 	Scanner sc = new Scanner(System.in);
 	
@@ -133,16 +133,66 @@ public class StringUtil_day0320 {
 	boolean endsWith(String str, String sub) {
 		String strM = this.reverseString(str), strS = this.reverseString(sub);
 		for(int i = 0; i < strS.length(); i++) {
-			if (strM.charAt(i) == strS.charAt(i)) {
-				return true;
+			if (strM.charAt(i) != strS.charAt(i)) {
+				return false;
 			}
-			return false;
 		}
-		return false;
+		return true;
 		
 	}
 	
 	
+	
+	
+//	10. 문자열 입력받고, 검색할 문자열을 입력받아 검색할 문자열이 어느 위치에 있는지 검색하는 indexOf(String str, String sub) 메소드 작성
+//    문자열 입력 : hello world
+//    검색할 문자열 : or
+//    or은 7번지에 위치함
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/**
+	 * 0321 추가과제1
+	 * 입력받은 문자열에서 검색할 문자가 있는지 확인하여 반환
+	 * @param strData 문자열
+	 * @param ch 검색할 문자
+	 * @return
+	 */
+	public static int checkChar(String strData, char ch) {
+		int cnt = 0;
+		for(int i = 0; i < strData.length(); i++) {
+			if(strData.charAt(i) == ch) {
+				cnt++;
+			}
+		}
+		return cnt;
+	}
+	
+	/**
+	 * 0321 추가과제2
+	 * 입력받은 문자열에서 특정 문자를 제거하여 반환
+	 * @param oriStr 문자열
+	 * @param delChar 제거할 문자
+	 * @return
+	 */
+	public static String removeChar(String oriStr, char delChar) {
+		String str = "";
+		for(int i = 0; i < oriStr.length(); i++) {
+			if(oriStr.charAt(i) != delChar) {
+				str += oriStr.charAt(i);
+			}
+		}
+		return str;
+	}
 	
 		
 		

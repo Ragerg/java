@@ -1,4 +1,4 @@
-package kr.ac.kopo.day11.day10homework;
+package kr.ac.kopo.day11.hw10;
 
 import java.util.Scanner;
 
@@ -14,23 +14,25 @@ public class ScannerUtil {
 	
 	Scanner sc;
 	
-	ScannerUtil() { // ScannerUtil을 호출할 때 멤버변수 sc를 초기화
+	public ScannerUtil() { // ScannerUtil을 호출할 때 멤버변수 sc를 초기화
 		sc = new Scanner(System.in);
 	}
 	
-	char nextChar(String msg) {
+	public char nextChar(String msg) {
 		System.out.print(msg);
 //		char ch = sc.nextLine().charAt(0);
 //		return ch;
 		return sc.nextLine().charAt(0);
 	}
 	
-	int nextInt(String msg) {
+	public int nextInt(String msg) {
 		System.out.print(msg);
-		return sc.nextInt();
+		int num = sc.nextInt(); //버퍼를 비워주기 위해 엔터를 한 번 더 친다
+		sc.nextLine();
+		return num;
 	}
 	
-	String nextString(String msg) {
+	public String nextString(String msg) {
 		System.out.print(msg);
 		return sc.nextLine();
 

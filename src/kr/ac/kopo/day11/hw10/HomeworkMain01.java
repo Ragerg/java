@@ -1,4 +1,4 @@
-package kr.ac.kopo.day11.day10homework;
+package kr.ac.kopo.day11.hw10;
 
 public class HomeworkMain01 {
 	
