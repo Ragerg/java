@@ -1,16 +1,15 @@
 package kr.ac.kopo.day12.Homework;
 
-public class Square extends Shapes {
-
-	int width;
+public class Square extends Oblong {
 
 	public Square() {
 		this.name = "정사각형";
 	}
 
 	public Square(String name, int area, int width) {
-		super(name, area);
+		super(name, area, width, width);
 		this.width = width;
+
 
 	}
 	

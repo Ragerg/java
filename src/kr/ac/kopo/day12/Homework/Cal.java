@@ -12,6 +12,7 @@ public class Cal {
 		Oblong obl = new Oblong();
 		Circle cir = new Circle();
 		
+		System.out.println("삼각형  2. 정사각형  3. 직사각형  4. 원");
 		int choice = scan.nextInt("면적을 구할 도형을 선택하세요 : ");
 		
 		switch (choice) {
