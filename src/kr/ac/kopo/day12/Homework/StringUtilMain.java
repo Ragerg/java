@@ -9,7 +9,7 @@ public class StringUtilMain {
 		boolean ew = su.endsWith("Hello", "ello");
 		System.out.println(ew);
 		
-		System.out.println(StringUtil_add_add.checkChar("Hello World Java", 'W'));
+		System.out.println(StringUtil_add_add.checkChar("Hello World Java", 'o'));
 		
 		System.out.println(StringUtil_add_add.removeChar("Hello World Java", 'l'));
 		
