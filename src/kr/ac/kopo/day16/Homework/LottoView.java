@@ -19,7 +19,7 @@ public class LottoView {
 		System.out.print("몇 게임? : ");
 		int gameCnt = sc.nextInt();
 		for(int i = 1; i <= gameCnt; i++) {
-			System.out.println("게임 " + i + " : " + Arrays.toString(getLotto4()));
+			System.out.println("게임 " + i + " : " + Arrays.toString(getLotto5()));
 			
 		}
 	}
@@ -86,20 +86,23 @@ public class LottoView {
 		
 		
 	
-	private Object[] getLotto5() {
+	private int[] getLotto5() {
+		
+		int[] lottoNums = new int[6];
 		
 		List<Integer> list  = new LinkedList<>();
-		for(int i = 1; list.size() <= 6; i++) {
-			Integer j = r.nextInt(45)+1;
-			if(list.contains(j)) {
-			} else {
-				list.add(j);
-				
-			}
+		for(int i = 1; i <= 45; i++) {
+			list.add(i);
 		}
-		Object[] lottoNums = list.toArray();
 		
-		return lottoNums;	}
+		for(int j = 0; j < lottoNums.length; j++) {
+			lottoNums[j] = list.remove(r.nextInt(list.size()));
+		}
+		
+		
+		return lottoNums;	
+		
+	}
 	
 	
 }
