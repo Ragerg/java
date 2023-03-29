@@ -19,7 +19,7 @@ public class LottoView {
 		System.out.print("몇 게임? : ");
 		int gameCnt = sc.nextInt();
 		for(int i = 1; i <= gameCnt; i++) {
-			System.out.println("게임 " + i + " : " + Arrays.toString(getLotto5()));
+			System.out.println("게임 " + i + " : " + Arrays.toString(getLotto4()));
 			
 		}
 	}
@@ -76,6 +76,7 @@ public class LottoView {
 			lottoNums[i] = r.nextInt(45)+1;
 			for(int j = 0; j < i; j++) {
 				if(lottoNums[i] == lottoNums[j]) {
+					System.out.print('!');
 					lottoNums[j] = r.nextInt(45)+1;
 				}
 			}
