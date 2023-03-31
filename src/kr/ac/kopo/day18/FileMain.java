@@ -1,6 +1,8 @@
 package kr.ac.kopo.day18;
 
 import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class FileMain {
 	
@@ -17,15 +19,15 @@ public class FileMain {
 		}
 		System.out.println("-----------");
 		
-		/*
-		File dirObj = new File("iotest/새폴더/강아지");
 		
-		System.out.println(dirObj.isDirectory() ? "디렉토리입니다" : "디렉토리가 아닙니다");
-		dirObj.mkdirs();
-		System.out.println(dirObj.isDirectory() ? "디렉토리입니다" : "디렉토리가 아닙니다");
-		*/
+		File dirObj1 = new File("iotest/새폴더/고양이");
 		
-		/*
+		System.out.println(dirObj1.isDirectory() ? "디렉토리입니다" : "디렉토리가 아닙니다");
+		dirObj1.mkdirs();
+		System.out.println(dirObj1.isDirectory() ? "디렉토리입니다" : "디렉토리가 아닙니다");
+		
+		
+		
 		File fileObj = new File("iotest/a.txt");
 		
 		System.out.println(fileObj.exists() ? "존재합니다" : "잘못된 이릅니다");
@@ -45,7 +47,7 @@ public class FileMain {
 		String pattern = "yyyy년 MM월 dd일 hh시 mm분 ss초";
 		SimpleDateFormat sdf = new SimpleDateFormat(pattern);
 		System.out.println("마지막 수정날짜 : " + sdf.format(new Date(lastTime)));
-		*/
+		
 	}
 
 }

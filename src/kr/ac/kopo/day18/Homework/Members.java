@@ -9,7 +9,7 @@ public class Members {
 		
 	}
 	
-	Members(String id, String pw) {
+	public Members(String id, String pw) {
 		this.id = id;
 		this.pw = pw;
 	}
