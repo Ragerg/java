@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Menu {
 	
 	Scanner sc = new Scanner(System.in);
-	
+	 
 	
 	public void menu() {
 		try {
@@ -40,12 +40,13 @@ public class Menu {
 		menu();
 		
 	}
+	
 	public void newFolder() {
 		System.out.println("새로 만들 폴더이름을 입력해 주세요");
 		String newfolder = sc.nextLine();
 		File dirObj = new File(Print.getPath() + newfolder); // 현재 경로에 새로 만들 폴더 이름 추가하여 새 경로 생성
 		dirObj.mkdirs(); // 새로운 폴더 생성
-	}
+	} 
 	
 	public void lowDir() {
 		System.out.println("이동할 하위 디렉토리를 입력해 주세요");

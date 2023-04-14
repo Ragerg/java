@@ -20,7 +20,7 @@ public class FileIOMain02 {
 
 			long start = System.currentTimeMillis();
 
-			while (true) {
+			while (true) { 
 				int c = fis.read();
 				if (c == -1)
 					break;

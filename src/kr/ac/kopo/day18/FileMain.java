@@ -13,7 +13,7 @@ public class FileMain {
 		System.out.println("-----------");
 		System.out.println(dirObj.getPath() + " 폴더");
 		System.out.println("-----------");
-		String[] dataArr = dirObj.list();
+		String[] dataArr = dirObj.list(); 
 		for(String data : dataArr) {
 			System.out.println(data);
 		}
